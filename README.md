@@ -1,35 +1,45 @@
-# Welcome to Vue Template With Less And PWA 👋
-![Version](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
-[![Twitter: patogordoo](https://img.shields.io/twitter/follow/patogordoo.svg?style=social)](https://twitter.com/patogordoo)
+# Welcome to Rocket Launches 👋
+![Version](https://img.shields.io/badge/Version-1.6-blue.svg?cacheSeconds=2592000)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#)
+[![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-> A simple template to work with Vue, Vue Router, Less and PWA(Progressive web app), by cdn.
+> This project was made to you inform your self about next rocket launches.
 
-### This project uses with base a code by [Mahfoudh Arous](https://github.com/aladin002dz/)
-- [Click to see the source](https://github.com/aladin002dz/PWA)
+### 🏠 [Homepage](https://rocketlaunches.ga/)
 
-### ✨ [Demo](https://pwa.less.vue-router-template.ga)
+## :bookmark_tabs: Content
 
-## Usage
+- [:zap: Features](#features-zap)
+- [:hammer_and_pick: Usage](#usage-hammer_and_pick)
+- [:handshake: Show your support](#show-your-support-handshake)
+- [:technologist: Author](#author-technologist)
 
-```sh
-Run "index.html" in your browser.
+---
 
-I recommend Chrome.
+## Features :zap:
+[![Deployed in Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://patogordo.ga)
+[![Vuejs](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)](https://vuejs.org/)
+[![Less](https://img.shields.io/badge/Less-1d365d?style=for-the-badge&logo=less&logoColor=white)](http://lesscss.org/)
+
+## Usage :hammer_and_pick:
 ```
+  Start the "index.html" in your browser.
+```
+***
 
-## Author
 
-👤 **PatoGordo**
+## Show your support :handshake:
 
-* Website: [https://patogordo.ga](https://patogordo.ga)
-* Twitter: [@patogordoo](https://twitter.com/patogordoo)
-* Github: [@PatoGordo](https://github.com/PatoGordo)
+Give a ⭐️ if this project helped you!<br>
+Makes a [pull request](https://github.com/PatoGordo/Rocket-Launches/pulls) adding new features or solving bugs. <br>
+Create a [Issue](https://github.com/PatoGordo/Rocket-Launches/issues) if you don't want to implement the feature or fix the bug. <br>
 
-## Show your support
+## Author :technologist:
 
-Give a ⭐️ if this project helped you!
+**PatoGordo**
 
+* Website: [https://patogordo.ga](https://patogordo.ga) <br>
+* Twitter: [@Patogordoo](https://twitter.com/Patogordoo) <br>
+* Github: [@PatoGordo](https://github.com/PatoGordo) <br>
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
