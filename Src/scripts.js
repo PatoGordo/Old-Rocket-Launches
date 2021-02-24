@@ -48,11 +48,19 @@ const Utils = {
 		return formattedTime.toLocaleString()
 	},
 	toMetricTemp(fahrenheit){
-		var celsius = (fahrenheit - 32) * 5 / 9
-		return celsius.toFixed(0)
+		if(fahrenheit == null){
+			return null
+		}else{
+			var celsius = (fahrenheit - 32) * 5 / 9
+			return celsius.toFixed(0)
+		}
 	},
 	toMetricSpeed(mph){
-		var kmh = mph * 1.609344
-		return kmh.toFixed(2)
+		if(mph == null){
+			return null
+		}else{
+			var kmh = mph * 1.609344
+			return kmh.toFixed(2)
+		}
 	}
 }

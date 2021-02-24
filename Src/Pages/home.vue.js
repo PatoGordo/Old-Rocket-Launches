@@ -42,7 +42,7 @@ const Home = Vue.component('Home', {
 			<p class="card-description">{{next.launch_description}}</p>
 			<p class="card-others first"><strong>Vehicle:</strong> {{next.vehicle.name}}</p>
 			<p class="card-others"><strong>Local:</strong> {{next.pad.location.name}}, {{next.pad.location.country}}</p>
-			<p class="card-others"><strong>Weather</strong> <br>Condition: {{next.weather_condition}}, <br>Temperature: {{isMetric ? Utils.toMetricTemp(next.weather_temp) + '°C' : next.weather_temp + '°F'}}, <br>Wind: {{isMetric ? Utils.toMetricSpeed(next.weather_wind_mph) + 'Km/h' : next.weather_wind_mph + 'Mph'}}.</p>
+			<p class="card-others"><strong>Weather</strong> <br>Condition: {{next.weather_condition != null ? next.weather_condition : 'null' }}, <br>Temperature: {{isMetric ? Utils.toMetricTemp(next.weather_temp) + '°C' : next.weather_temp + '°F'}}, <br>Wind: {{isMetric ? Utils.toMetricSpeed(next.weather_wind_mph) + 'Km/h' : next.weather_wind_mph + 'Mph'}}.</p>
 		</div>
 		<h2>Breaking News</h2>
 		<div class="card" v-for="article in firstArticle">
