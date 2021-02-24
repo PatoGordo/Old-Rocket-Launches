@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('Components/navbar.less');
-@import url('Components/home.less');
+@import url('Components/card.less');
+@import url('Components/switch.less');
+@import url('Components/settings.less');
+@import url('Components/themes.less');
+@import url('Components/modal.less');
 @import url('variables.less');
 
 
@@ -15,27 +18,36 @@
 	text-decoration: none;
 }
 body{
+	height: 100vh;
 	width: 100%;
-	height: 100%;
+	.flex-coll-center-center()
 }
 #app{
-	width: 100%;
 	height: 100%;
+	width: 100%;
+	.flex-coll-center-center()
 }
 .component{
 	width: 100%;
 	height: 100%;
-	.flex-coll-center-center()
+	.flex-coll-center-center();
+	@media screen and (max-width: 420px) {
+		overflow-y: auto;
+		margin-bottom: 80px;
+	}
 }
 button, a, input, label{
 	.romove-user-select()
+}
+a{
+	color: #1E88E5;
+	&:hover{
+		color: rgb(22, 104, 177);
+	}
 }
 textarea {
   resize: none;
 }
 h1, h2{
 	font-weight: 400;
-}
-h2{
-	margin-right: auto;
 }

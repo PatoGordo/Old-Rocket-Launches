@@ -9,23 +9,11 @@
 		<!-- Service Worker verification and manifest json -->
 		<meta name="theme-color" content="#35495e"/>
     <link rel="manifest" href="manifest.json">
-		<script>
-			//if browser support service worker
-			if('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('service-worker.js');
-			}
-			function getMobileOperatingSystem() {
-				var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+		<script src="Src/scripts.js"></script>
 
-				if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ){
-					return 'iOS';
-				}else if(userAgent.match( /Android/i )){
-					return 'Android';
-				}else{
-					return 'unknown';
-				}
-			}
-		</script>
+
+		<!-- Axios -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 
 
 		<!-- Icons -->
@@ -33,7 +21,9 @@
 		<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 		
 		
-		<!-- Less Styles -->
+		<!-- Less Styles & Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet/less" type="text/css" href="Src/Styles/style.less" />
 
 
@@ -47,6 +37,12 @@
   </head>
   <body>
 		<div id="app"></div><!-- All components will be rendered here. -->
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<div class="loader"></div>
+			</div>
+		</div>
+		<script>document.body.classList.add(getTheme())</script>
 
 
 		<!-- Components -->
@@ -56,6 +52,10 @@
 
 		<!-- Pages Components -->
 		<script src="Src/Pages/home.vue.js"></script>
+		<script src="Src/Pages/news.vue.js"></script>
+		<script src="Src/Pages/launches.vue.js"></script>
+		<script src="Src/Pages/settings.vue.js"></script>
+
 		<script src="Src/Pages/404.vue.js"></script>
 
 
@@ -65,6 +65,6 @@
 
 
 		<!-- Pwa Worker -->
-		<script src="Src/scripts.js"></script>
+		<!-- <script src="Src/pwa.js"></script> -->
   </body>
 </html>

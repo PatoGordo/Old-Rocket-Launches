@@ -1,34 +1,58 @@
-const PWA = {
-	init(){
-		let deferredPrompt;
-		const addBtn = document.querySelector('.add-button');
-		addBtn.style.display = 'none';
+if('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('service-worker.js');
+}
+function getMobileOperatingSystem() {
+	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-		window.addEventListener('beforeinstallprompt', (e) => {
-			// Prevent Chrome 67 and earlier from automatically showing the prompt
-			e.preventDefault();
-			// Stash the event so it can be triggered later.
-			deferredPrompt = e;
-			// Update UI to notify the user they can add to home screen
-			addBtn.style.display = 'flex';
-
-			addBtn.addEventListener('click', (e) => {
-				// hide our user interface that shows our A2HS button
-				addBtn.style.display = 'none';
-				// Show the prompt
-				deferredPrompt.prompt();
-				// Wait for the user to respond to the prompt
-				deferredPrompt.userChoice.then((choiceResult) => {
-					if (choiceResult.outcome === 'accepted') {
-						localStorage.setItem('isPWA', true)
-						alert('The installation may take a while!\n\nPlease stay on the page!')
-					} else {
-						addBtn.style.display = 'flex'
-					}
-					deferredPrompt = null;
-				});
-			});
-		});
+	if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ){
+		return 'iOS';
+	}else if(userAgent.match( /Android/i )){
+		return 'Android';
+	}else{
+		return 'unknown';
 	}
 }
-PWA.init()
+
+if(localStorage.getItem('theme') == null){
+	localStorage.setItem('theme', 'dark')
+}else{
+	localStorage.getItem('theme', 'default')
+}
+function getTheme(){
+	return localStorage.getItem('theme')
+}
+
+if(localStorage.getItem('measures') == null){
+	localStorage.setItem('measures', 'metric')
+}else{
+	localStorage.getItem('measures', 'imperial')
+}
+function getMeasures(){
+	return localStorage.getItem('measures')
+}
+
+const Utils = {
+	unixConverter(unix){
+		var date = new Date(unix * 1000);
+
+		var formattedTime = date.toLocaleString()
+		return formattedTime
+	},
+	tMinus(start, end){
+		var hourDiff = parseInt(start.split(':')[0],10) - parseInt(end.split(':')[0],10);
+
+		return hourDiff
+	},
+	iSOtoUTC(iso){
+		var formattedTime = new Date(iso)
+		return formattedTime.toLocaleString()
+	},
+	toMetricTemp(fahrenheit){
+		var celsius = (fahrenheit - 32) * 5 / 9
+		return celsius.toFixed(0)
+	},
+	toMetricSpeed(mph){
+		var kmh = mph * 1.609344
+		return kmh.toFixed(2)
+	}
+}
