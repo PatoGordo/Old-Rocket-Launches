@@ -1,7 +1,7 @@
 const Launches = Vue.component('Launches', {
   data: function () {
     return {
-  		title: "Rocket Launches - Home",
+  		title: "Rocket Launches - Launches",
 			nextLaunch: [],
 			isMetric: null
     }

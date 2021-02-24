@@ -1,7 +1,7 @@
 const Settings = Vue.component('Settings', {
   data: function () {
     return {
-  		title: "VueRouter CDN Template with Less - Settings",
+  		title: "Rocket Launches - Settings",
 			name: '',
 			isDark: null,
 			isMetric: null
