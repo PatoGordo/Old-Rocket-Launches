@@ -2,14 +2,20 @@
 	margin: 10px;
 	padding: 15px;
 	width: ~'min(95%, 420px)';
-	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: start;
 	.card-title{
 		margin-bottom: 5px;
 		text-align: start;
+		align-self: start;
 	}
 	.card-date{
 		font-weight: 300;
 		text-align: start;
+		align-self: start;
 		font-size: smaller;
 	}
 	.card-description{
@@ -18,9 +24,15 @@
 	}
 	.card-others{
 		text-align: start;
+		align-self: start;
 		margin-top: 5px;
+		a{
+			align-self: start;
+			text-align: start;
+		}
 		&.first{
 			margin-top: 10px;
+			width: 100%;
 		}
 	}
 }
