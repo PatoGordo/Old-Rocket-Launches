@@ -6,7 +6,7 @@
 > This project was made to you inform your self about next rocket launches.
 
 ### 🏠 [Homepage](https://rocketlaunches.ga/)
-### [API](https://api.rocketlaunches.ga/)
+### 📕 [API](https://api.rocketlaunches.ga/)
 
 ## :bookmark_tabs: Content
 
@@ -18,7 +18,7 @@
 ---
 
 ## Features :zap:
-[![Deployed in Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://patogordo.ga)
+[![Deployed in Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://rocketlaunches.ga)
 [![Vuejs](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)](https://vuejs.org/)
 [![Less](https://img.shields.io/badge/Less-1d365d?style=for-the-badge&logo=less&logoColor=white)](http://lesscss.org/)
 
