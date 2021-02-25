@@ -4,7 +4,9 @@ const Settings = Vue.component('Settings', {
   		title: "Rocket Launches - Settings",
 			name: '',
 			isDark: null,
-			isMetric: null
+			isMetric: null,
+			addbutton: 'display: flex',
+			deferredPrompt: null
     }
   },
 	methods:{
@@ -27,7 +29,21 @@ const Settings = Vue.component('Settings', {
 				localStorage.setItem('measures', 'metric')
 				this.isMetric = true
 			}
-		}
+		},
+		// addPwa(){
+		// 	this.addbutton = 'display: none'
+		// 	// Show the prompt
+		// 	this.deferredPrompt.prompt();
+		// 	// Wait for the user to respond to the prompt
+		// 	this.deferredPrompt.userChoice.then((choiceResult) => {
+		// 		if (choiceResult.outcome === 'accepted') {
+		// 			alert('The instalation started now.')
+		// 		} else {
+		// 			this.addbutton = 'display: flex'
+		// 		}
+		// 		this.deferredPrompt = null;
+		// 	});
+		// }
 	},
 	created(){
 		document.title = this.title
@@ -41,23 +57,50 @@ const Settings = Vue.component('Settings', {
 		}else{
 			this.isMetric = false
 		}
+
+		// this.addbutton = 'display: none'
+
+		// window.addEventListener('beforeinstallprompt', (e) => {
+		// 	// Prevent Chrome 67 and earlier from automatically showing the prompt
+		// 	e.preventDefault();
+		// 	// Stash the event so it can be triggered later.
+		// 	this.deferredPrompt = e;
+		// 	// Update UI to notify the user they can add to home screen
+		// 	this.addbutton = 'display: flex'
+		// });
 	},
   template: `
 	<div class="component settings">
-		<h2>Settings</h2>
+		<h1>Settings</h1>
+		<h2>Theme</h2>
 		<div class="theme-settings">
-			<h2 class="settings-item-title">Dark mode &nbsp;</h2>
+			<h2 class="settings-item-title">Light &nbsp;</h2>
 			<label class="settings switch">
 				<input type="checkbox" :checked="isDark" @click="changeTheme()">
 				<span class="slider round"></span>
 			</label>
+			<h2 class="settings-item-title">&nbsp; Dark</h2>
 		</div>
-		<div class="theme-settings">
-			<h2 class="settings-item-title">Metric measures &nbsp;</h2>
+		<h2>Measures</h2>
+		<div class="measures-settings">
+			<h2 class="settings-item-title">Imperial &nbsp;</h2>
 			<label class="settings switch">
 				<input type="checkbox" :checked="isMetric" @click="changeMeasures()">
 				<span class="slider round"></span>
 			</label>
+			<h2 class="settings-item-title">&nbsp; Metric</h2>
 		</div>
+
+		<!--button class="install-button" :style="addbutton" @click="addPwa()">
+			<ion-icon name="cloud-download-outline" class="icon-button"></ion-icon>
+			Install App
+		</button-->
+
+		<footer class="settings-sources">
+			<h2>Sources</h2>
+			<a href="https://github.com/PatoGordo/Rocket-Launches" target="_blank">Website/PWA Code</a><br>
+			<a href="https://github.com/PatoGordo/Rocket-Launches-API" target="_blank">Api Code</a>&nbsp;&nbsp;|&nbsp;
+			<a href="https://api.rocketlaunches.ga/" target="_blank">Api Link</a>
+		</footer>
 	</div>`
 })

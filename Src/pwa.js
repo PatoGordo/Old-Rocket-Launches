@@ -1,8 +1,18 @@
 const PWA = {
 	init(){
 		let deferredPrompt;
-		const addBtn = document.querySelector('.add-button');
+		const addBtn = document.querySelector('.install-button');
+		const iconBtn = document.querySelector('.icon-button')
 		addBtn.style.display = 'none';
+
+		var mobileType = this.getMobileOperatingSystem();
+		if( mobileType == "Android" ){
+			iconBtn.name = 'logo-google-playstore'
+		}else if( mobileType == "iOS" ){
+			iconBtn.name = 'logo-apple-appstore'
+		}else{
+			iconBtn.name = 'storefront-outline'
+		}
 
 		window.addEventListener('beforeinstallprompt', (e) => {
 			// Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -20,8 +30,7 @@ const PWA = {
 				// Wait for the user to respond to the prompt
 				deferredPrompt.userChoice.then((choiceResult) => {
 					if (choiceResult.outcome === 'accepted') {
-						localStorage.setItem('isPWA', true)
-						alert('The installation may take a while!\n\nPlease stay on the page!')
+						alert('A instalação pode demorar um pouco!\n\nPor favor fique na página!')
 					} else {
 						addBtn.style.display = 'flex'
 					}

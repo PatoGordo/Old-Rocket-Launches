@@ -1,10 +1,35 @@
-.theme-settings{
+.theme-settings, .measures-settings{
+	width: ~'min(90%, 300px)';
+	white-space: nowrap;
 	padding: 15px;
 	margin: 20px 10px;
 	display: flex;
 	border: 1px solid rgba(170, 170, 170, 0.186);
 	border-radius: 10px;
 	flex-direction: row;
+	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
+}
+.settings-sources{
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+.install-button{
+	color: #fff;
+	padding: 10px;
+	margin: 7px 14px;
+	border: 0;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	ion-icon{
+		margin-right: 5px;
+		font-size: 1.8rem;
+	}
 }
