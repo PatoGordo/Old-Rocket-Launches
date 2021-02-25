@@ -11,7 +11,7 @@ const Launches = Vue.component('Launches', {
 	},
 	created(){
 		document.querySelector('#modal').style.display = 'flex'
-		axios.get('https://fdo.rocketlaunch.live/json/launches/next/5')
+		axios.get('https://rocket-launches-api.vercel.app/api/launches')
 		.then(res => {
 			this.nextLaunch = res.data.result
 			document.querySelector('#modal').style.display = 'none'

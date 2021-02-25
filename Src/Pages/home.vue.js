@@ -15,12 +15,12 @@ const Home = Vue.component('Home', {
 	},
 	created(){
 		document.querySelector('#modal').style.display = 'flex'
-		axios.get('https://fdo.rocketlaunch.live/json/launches/next/1')
+		axios.get('https://rocket-launches-api.vercel.app/api/launches')
 		.then(res => {
-			this.nextLaunch = res.data.result
-			axios.get('https://www.spaceflightnewsapi.net/api/v2/articles?_limit=1')
+			this.nextLaunch = res.data.result.slice(0,1)
+			axios.get('https://rocket-launches-api.vercel.app/api/news')
 			.then(res => {
-				this.firstArticle = res.data
+				this.firstArticle = res.data.slice(0,1)
 				document.querySelector('#modal').style.display = 'none'
 			})
 		})

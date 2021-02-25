@@ -10,7 +10,7 @@ const News = Vue.component('News', {
 	},
 	created(){
 		document.querySelector('#modal').style.display = 'flex'
-		axios.get('https://www.spaceflightnewsapi.net/api/v2/articles?_limit=5')
+		axios.get('https://rocket-launches-api.vercel.app/api/news')
 		.then(res => {
 			this.firstArticle = res.data
 			document.querySelector('#modal').style.display = 'none'

@@ -1,11 +1,12 @@
 # Welcome to Rocket Launches 👋
-![Version](https://img.shields.io/badge/Version-1.6-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/Version-1.1-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 > This project was made to you inform your self about next rocket launches.
 
 ### 🏠 [Homepage](https://rocketlaunches.ga/)
+### [API](https://api.rocketlaunches.ga/)
 
 ## :bookmark_tabs: Content
 
