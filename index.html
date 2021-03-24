@@ -22,10 +22,11 @@
 		<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 		
 		
-		<!-- Less Styles & Fonts -->
+		<!-- TailwindCss CDN, Less Styles & Fonts -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-		<link rel="stylesheet/less" type="text/css" href="Src/Styles/style.less" />
+    <link rel="stylesheet" href="Src/Styles/style.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 
 		<!-- Less CDN's -->
@@ -49,31 +50,31 @@
   </head>
   <body>
 		<div id="app"></div><!-- All components will be rendered here. -->
-		<div id="modal" class="modal">
-			<div class="modal-content">
-				<div class="loader"></div>
+		<div id="modal" class="modal flex flex-col items-center justify-center fixed z-10 left-0 top-0 w-screen h-full overflow-auto">
+			<div class="modal-content m-2.5 p-5 w-4/5 flex flex-col items-center justify-center">
+				<div class="loader animate-spin border-10 border-solid border-loader border-t-loader border-t-10 border-solid rounded-loader w-100px h-100px"></div>
 			</div>
 		</div>
 		<script>document.body.classList.add(getTheme())</script>
 
 
 		<!-- Components -->
-		<script src="Src/Components/components.vue"></script><!-- Set Here Simple Components -->
-		<script src="Src/Components/navbar.vue"></script><!-- Navbar Component -->
+		<script src="Src/Components/components.vue.js"></script><!-- Set Here Simple Components -->
+		<script src="Src/Components/navbar.vue.js"></script><!-- Navbar Component -->
 
 
 		<!-- Pages Components -->
-		<script src="Src/Pages/home.vue"></script>
-		<script src="Src/Pages/news.vue"></script>
-		<script src="Src/Pages/launches.vue"></script>
-		<script src="Src/Pages/settings.vue"></script>
+		<script src="Src/Pages/home.vue.js"></script>
+		<script src="Src/Pages/news.vue.js"></script>
+		<script src="Src/Pages/launches.vue.js"></script>
+		<script src="Src/Pages/settings.vue.js"></script>
 
-		<script src="Src/Pages/404.vue"></script>
+		<script src="Src/Pages/404.vue.js"></script>
 
 
 		<!-- Worker Components -->
     <script src="Src/router.js"></script><!-- Set your routes here -->
-    <script src="Src/app.vue"></script><!-- Components Render -->
+    <script src="Src/app.vue.js"></script><!-- Components Render -->
 
 
 		<!-- Pwa Worker -->

@@ -47,6 +47,7 @@ const Settings = Vue.component('Settings', {
 	},
 	created(){
 		document.title = this.title
+    document.querySelector('#modal').style.display = 'none'
 		if(localStorage.getItem('theme') == 'dark'){
 			this.isDark = true
 		}else{
@@ -71,9 +72,9 @@ const Settings = Vue.component('Settings', {
 	},
   template: `
 	<div class="component settings">
-		<h1>Settings</h1>
-		<h2>Theme</h2>
-		<div class="theme-settings">
+		<h1 class="text-3xl">Settings</h1>
+		<h2 class="text-2xl">Theme</h2>
+		<div class="theme-settings whitespace-nowrap p-3.5 mx-2.5 my-5 rounded-lg flex flex-row items-center justify-center flex-nowrap settings-border">
 			<h2 class="settings-item-title">Light &nbsp;</h2>
 			<label class="settings switch">
 				<input type="checkbox" :checked="isDark" @click="changeTheme()">
@@ -81,8 +82,8 @@ const Settings = Vue.component('Settings', {
 			</label>
 			<h2 class="settings-item-title">&nbsp; Dark</h2>
 		</div>
-		<h2>Measures</h2>
-		<div class="measures-settings">
+		<h2 class="text-2xl">Measures</h2>
+		<div class="measures-settings whitespace-nowrap p-3.5 mx-2.5 my-5 rounded-lg flex flex-row items-center justify-center flex-nowrap settings-border">
 			<h2 class="settings-item-title">Imperial &nbsp;</h2>
 			<label class="settings switch">
 				<input type="checkbox" :checked="isMetric" @click="changeMeasures()">
@@ -96,8 +97,8 @@ const Settings = Vue.component('Settings', {
 			Install App
 		</button-->
 
-		<footer class="settings-sources">
-			<h2>Sources</h2>
+		<footer class="settings-sources bottom-0 mt-auto mb-2.5">
+			<h2 class="text-2xl">Sources</h2>
 			<a href="https://github.com/PatoGordo/Rocket-Launches" target="_blank">Website/PWA Code</a><br>
 			<a href="https://github.com/PatoGordo/Rocket-Launches-API" target="_blank">Api Code</a>&nbsp;&nbsp;|&nbsp;
 			<a href="https://api.rocketlaunches.ga/" target="_blank">Api Link</a>
