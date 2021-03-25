@@ -1,0 +1,50 @@
+.romove-user-select{user-select:none;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:transparent}
+.flex-coll-center-center{display:flex;flex-direction:column;align-items:center;text-align:center}
+.text-nav-button{color:#fff!important}
+.text-hover:hover{color:#42b883!important}
+.text-hover.active{color:#42b883!important}
+.min-w-95-420{width:min(95%,420px)}
+.text-see-more{color:#1E88E5}
+.text-smaller{font-size:smaller}
+.leading-initial{line-height:initial}
+.min-w-90-300{width:min(90%,300px)}
+.settings-border{border:1px solid rgba(170,170,170,0.186)}
+.border-10{border-width:10px}
+.border-t-10{border-top-width:10px}
+.border-loader{border-color:#f3f3f3}
+.border-t-loader{border-top-color:#00C853}
+.w-100px{width:100px}
+.h-100px{height:100px}
+.rounded-loader{border-radius:50%}
+.switch{position:relative;display:inline-block;width:60px;height:34px}
+.switch input{opacity:0;width:0;height:0}
+.switch .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s}
+.switch .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:#fff;-webkit-transition:.4s;transition:.4s}
+input:checked + .slider{background-color:#00E676}
+input:focus + .slider{box-shadow:0 0 1px #bebebe}
+input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px)}
+.slider.round{border-radius:34px}
+.slider.round:before{border-radius:50%}
+body{background:#fff;color:#24292e;transition:all ease .6s}
+body .component{transition:all ease .6s;background:#fff}
+body .card{border-bottom:1px solid #ececec}
+body .modal{background:#CFD8DC}
+body .navbar{background:#24292E}
+body .install-button{background:#69F0AE}
+body.dark{transition:all ease .6s;background:#171d2d;color:#e1e2e4}
+body.dark .component{background:#171d2d;transition:all ease .6s}
+body.dark button{background:#3485e4}
+body.dark button.install-button{background:#2f80db}
+body.dark .card{border-bottom:1px solid #666}
+body.dark .modal{background:#1d2333}
+body.dark .navbar{background:#1d2333}
+*{padding:0;margin:0;box-sizing:border-box;outline:none;font-family:'Montserrat',sans-serif;list-style:none;text-decoration:none}
+body{height:100vh;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center}
+#app{height:100%;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center}
+.component{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;text-align:center}
+@media screen and (max-width: 640px){.component{overflow-y:auto;margin-bottom:80px}}
+button,a,input,label{user-select:none;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:transparent}
+a{color:#1E88E5!important}
+a:hover{color:#1668b1!important}
+textarea{resize:none}
+h1,h2{font-weight:400}

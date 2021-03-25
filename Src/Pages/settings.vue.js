@@ -99,9 +99,9 @@ const Settings = Vue.component('Settings', {
 
 		<footer class="settings-sources bottom-0 mt-auto mb-2.5">
 			<h2 class="text-2xl">Sources</h2>
-			<a href="https://github.com/PatoGordo/Rocket-Launches" target="_blank">Website/PWA Code</a><br>
-			<a href="https://github.com/PatoGordo/Rocket-Launches-API" target="_blank">Api Code</a>&nbsp;&nbsp;|&nbsp;
-			<a href="https://api.rocketlaunches.ga/" target="_blank">Api Link</a>
+			<a href="https://github.com/PatoGordo/Rocket-Launches" target="_blank" rel="noopener">Website/PWA Code</a><br>
+			<a href="https://github.com/PatoGordo/Rocket-Launches-API" target="_blank" rel="noopener">Api Code</a>&nbsp;&nbsp;|&nbsp;
+			<a href="https://api.rocketlaunches.ga/" target="_blank" rel="noopener">Api Link</a>
 		</footer>
 	</div>`
 })

@@ -50,7 +50,7 @@ const Home = Vue.component('Home', {
 				<h2 class="card-title mb-1 text-left text-2xl self-start"><strong>{{article.title}}</strong></h2>
 				<p class="card-date font-light text-left self-start text-smaller">{{Utils.iSOtoUTC(article.publishedAt)}}</p>
 				<p class="card-description mt-5 text-left">{{article.summary}}</p>
-				<p class="text-left self-start mt-1 mt-2.5 w-full"><a class="text-left self-start text-see-more" :href="article.url"><strong>See more in {{article.newsSite}}</a></strong></p>
+				<p class="text-left self-start mt-1 mt-2.5 w-full"><a class="text-left self-start text-see-more" :href="article.url" target="_blank" rel="noopener"><strong>See more in {{article.newsSite}}</a></strong></p>
 			</div>
 		</div>
 	</div>`
