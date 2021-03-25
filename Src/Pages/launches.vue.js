@@ -35,7 +35,6 @@ const Launches = Vue.component('Launches', {
 				<p class="card-description mt-5 text-left">{{next.launch_description}}</p>
 				<p class="card-others first text-left self-start mt-1 mt-2.5 w-full"><strong>Vehicle:</strong> {{next.vehicle.name}}</p>
 				<p class="card-others first text-left self-start mt-1"><strong>Local:</strong> {{next.pad.location.name}}, {{next.pad.location.country}}</p>
-				<p class="card-others first text-left self-start mt-1"><strong>Weather</strong> <br>Condition: {{next.weather_condition != null ? next.weather_condition : 'null' }}, <br>Temperature: {{isMetric ? Utils.toMetricTemp(next.weather_temp) + '°C' : next.weather_temp + '°F'}}, <br>Wind: {{isMetric ? Utils.toMetricSpeed(next.weather_wind_mph) + 'Km/h' : next.weather_wind_mph + 'Mph'}}.</p>
 			</div>
 		</div>
 		<footer style="margin-bottom: 20px;">Data by: <a href="https://www.rocketlaunch.live/">https://www.rocketlaunch.live/</a></footer>
