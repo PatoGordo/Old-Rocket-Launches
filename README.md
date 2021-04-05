@@ -30,3 +30,11 @@ Makes a [pull request](https://github.com/PatoGordo/Rocket-Launches/pulls) addin
 Create a [Issue](https://github.com/PatoGordo/Rocket-Launches/issues) if you don't want to implement the feature or fix the bug. <br>
 
 ## Author :technologist:
+
+**PatoGordo**
+
+* Website: [https://patogordo.ga](https://patogordo.ga) <br>
+* Twitter: [@Patogordoo](https://twitter.com/Patogordoo) <br>
+* Github: [@PatoGordo](https://github.com/PatoGordo) <br>
+
+***
