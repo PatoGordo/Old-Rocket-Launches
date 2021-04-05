@@ -1,12 +1,11 @@
-# Welcome to Rocket Launches 👋
+# Welcome to Vue Pwa Template 👋
 ![Version](https://img.shields.io/badge/Version-2.0-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-> This project was made to you inform your self about next rocket launches.
+> This project was made to work with Vue cdn and Pwa
 
-### 🏠 [Homepage](https://rocketlaunches.ga/)
-### 📕 [API](https://api.rocketlaunches.ga/)
+### 🏠 [Homepage](https://pwa.vue-template.ga/)
 
 ## :bookmark_tabs: Content
 
@@ -20,22 +19,21 @@
 ## Features :zap:
 [![Deployed in Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://rocketlaunches.ga)
 [![Vuejs](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)](https://vuejs.org/)
-[![LessCss](https://img.shields.io/badge/Less-1d365d?style=for-the-badge&logo=less&logoColor=white)](http://lesscss.org/)
-[![TailwindCss](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=Tailwind%20CSS&logoColor=white)](https://tailwindcss.com/)
-[![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=for-the-badge&logo=Google%20Analytics&logoColor=white)](https://analytics.google.com/)
+[![Pwa](https://img.shields.io/badge/Pwa-35495E?style=for-the-badge&logo=pwa&logoColor=4FC08D)](https://web.dev/progressive-web-apps/)
 
 ## Usage :hammer_and_pick:
 ```
   Start the "index.html" in your browser.
 ```
+> If you add any files and they need to be used offline, add their directory to the cache controller in 'worker.js'.
 ***
 
 
 ## Show your support :handshake:
 
 Give a ⭐️ if this project helped you!<br>
-Makes a [pull request](https://github.com/PatoGordo/Rocket-Launches/pulls) adding new features or solving bugs. <br>
-Create a [Issue](https://github.com/PatoGordo/Rocket-Launches/issues) if you don't want to implement the feature or fix the bug. <br>
+Makes a [pull request](https://github.com/PatoGordo/VuePwaTemplate/pulls) adding new features or solving bugs. <br>
+Create a [Issue](https://github.com/PatoGordo/VuePwaTemplate/issues) if you don't want to implement the feature or fix the bug. <br>
 
 ## Author :technologist:
 
